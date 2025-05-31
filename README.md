@@ -7,7 +7,7 @@ A full-stack podcast application built using NestJS for the backend and Next.js 
 You can try the live application here:  
 [https://podcast-fullstack-app-frontend.onrender.com/](https://podcast-fullstack-app-frontend.onrender.com/)
 
-##🛠️ Technologies Used
+## 🛠️ Technologies Used
 
 - **NestJS:** A progressive Node.js framework built with TypeScript, designed for building scalable and maintainable server-side applications using modular architecture and dependency injection.
 
