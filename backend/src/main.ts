@@ -6,10 +6,10 @@ async function bootstrap() {
 
   // ✅ تمكين CORS:
   app.enableCors({
-    origin: 'http://localhost:3000', // موقع الفرونت
-    credentials: true, // لو بتحتاجه لاحقًا
+    origin: 'https://podcast-fullstack-app-frontend.onrender.com', 
+    credentials: true,
   });
 
-  await app.listen(3004);
+  await app.listen(5432);
 }
 bootstrap();

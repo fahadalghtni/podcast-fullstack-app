@@ -6,11 +6,11 @@ import { ItunesModule } from './itunes/itunes.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'dpg-d0tgdbs9c44c739f9hj0-a',
       port: 5432,
-      username: 'postgres',
-      password: 'secret123',
-      database: 'postgres',
+      username: 'podcast_fullstack_app_database_user',
+      password: 'nByaxRjkuPWQNTxX1y0wOmLEAQbjJuUw',
+      database: 'podcast_fullstack_app_database',
       autoLoadEntities: true,
       synchronize: true,
     }),

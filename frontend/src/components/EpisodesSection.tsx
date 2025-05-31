@@ -1,8 +1,18 @@
+
+type Episode = {
+  id: string;
+  artistName: string;
+  artworkUrl100: string;
+  collectionName : string;
+  previewUrl: string;
+  trackName: string;
+  };
 export default function EpisodeSection({ episodes }: { episodes: Episode[] }) {
     // نقسم الحلقات إلى 3 أعمدة
     const col1 = episodes.filter((_, i) => i % 3 === 0);
     const col2 = episodes.filter((_, i) => i % 3 === 1);
     const col3 = episodes.filter((_, i) => i % 3 === 2);
+
   
     const truncateText = (text: string, max: number) =>
       text.length > max ? text.slice(0, max) + ".." : text;

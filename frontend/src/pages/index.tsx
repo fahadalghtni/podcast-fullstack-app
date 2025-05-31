@@ -11,13 +11,13 @@ export default function Home() {
 
   const handleSearch = async (term: string) => {
     setSearchTerm(term);
-    const res = await fetch(`http://localhost:3004/itunes/search?term=${term}`);
+    const res = await fetch(`https://podcast-fullstack-app-backend.onrender.com/itunes/search?term=${term}`);
     const data = await res.json();
     setTracks(data);
   };
 
   const fetchEpisodes = async () => {
-    const res = await fetch("http://localhost:3004/itunes/all");
+    const res = await fetch("https://podcast-fullstack-app-backend.onrender.com/itunes/all");
     const data = await res.json();
     setEpisodes(data);
   };
