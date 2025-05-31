@@ -1,8 +1,8 @@
-# 📝 Podcast Fullstack App
+## 📝 Podcast Fullstack App
 
 A full-stack podcast application built using NestJS for the backend and Next.js for the frontend.
 
-##🚀 Live
+## 🚀 Live
 
 You can try the live application here:  
 [https://podcast-fullstack-app-frontend.onrender.com/](https://podcast-fullstack-app-frontend.onrender.com/)
