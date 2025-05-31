@@ -1,4 +1,3 @@
-// src/components/TrackCard.tsx
 interface TrackCardProps {
     image: string;
     trackName: string;

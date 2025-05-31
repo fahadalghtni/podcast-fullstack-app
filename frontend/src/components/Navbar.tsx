@@ -7,7 +7,7 @@ export default function Navbar({ onSearch }: { onSearch: (term: string) => void 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (term.trim()) {
-      onSearch(term); // نرسل الكلمة للبارنت
+      onSearch(term); 
     }
   };
 

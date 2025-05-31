@@ -16,7 +16,7 @@ export default function TrackSection({ tracks }: { tracks: Track[] }) {
         {tracks.map((track, index) => (
           <div key={index} className="inline-block mr-4 align-top">
             <TrackCard
-              image={track.artworkUrl100 || track.image}
+               image={(track.artworkUrl100 || track.image)!}
               trackName={track.trackName}
               artistName={track.artistName}
             />
