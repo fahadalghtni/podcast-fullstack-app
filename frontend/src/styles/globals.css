@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.custom-scroll {
+  scrollbar-color: #424281 #1a1a2e;
+  scrollbar-width: thin;
+  overflow-x:scroll;
+}
+
+/* Chrome, Safari */
+.custom-scroll::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  transition: all 0.3s ease;
+  overflow-x:scroll;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #424281;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+/* تكبير الشريط عند اقتراب الماوس */
+.custom-scroll:hover::-webkit-scrollbar-thumb {
+  background-color: #5a5ad0;
+  height: 10px;
+  width: 8px;
+}
+
