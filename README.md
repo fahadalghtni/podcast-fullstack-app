@@ -9,7 +9,7 @@ You can try the live application here:
 
 ## 🛠️ Technologies Used 
   
- **🧱 NestJS:** A progressive Node.js framework built with TypeScript, designed for building scalable and maintainable server-side applications using modular architecture and dependency injection.
+-  **🧱 NestJS:** A progressive Node.js framework built with TypeScript, designed for building scalable and maintainable server-side applications using modular architecture and dependency injection.
 
 - **⚛️ Next.js:** A React framework that enables server-side rendering (SSR) and static site generation (SSG), improving performance and SEO.
 
@@ -22,7 +22,6 @@ You can try the live application here:
 - **🔧 Git:** A distributed version control system used for tracking changes in source code during software development.
 
 - **🌐 GitHub:** A platform for hosting Git repositories, facilitating collaboration, code sharing, and project management.
-
 
 
 ## ⚙️ API Endpoints
