@@ -39,4 +39,5 @@ You can try the live application here:
 
 ## Contact
 
-- Email: example@example.com
+- Email: fahdalghtni246@gmail.com
+
