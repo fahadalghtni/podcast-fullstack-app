@@ -47,7 +47,7 @@ export default function Home() {
   
           <div className="border-b border-[#28293D] bg-[#1A1C2D]">
   <p className="text-sm font-bold p-4 mb-2 text-white pt-12">
-    Top episodes for 
+    Top episodes for فنجان
   </p>
 </div>
 

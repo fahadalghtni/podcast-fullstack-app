@@ -11,10 +11,10 @@ export default function TrackSection({ tracks }: { tracks: Track[] }) {
  
 
   return (
-    <div className="overflow-x-scroll w-full custom-scroll ">
+    <div className="overflow-x-scroll max-w-[1170px] custom-scroll ">
       <div className="whitespace-nowrap">
         {tracks.map((track, index) => (
-          <div key={index} className=" flex  gap-4 align-top">
+          <div key={index} className="inline-block mr-4 align-top">
             <TrackCard
                image={(track.artworkUrl100 || track.image)!}
               trackName={track.trackName}
