@@ -17,36 +17,36 @@ export default function Sidebar() {
             <div className="px-4 py-2 flex gap-4 items-center">
 
             <img className=" h-4" src="https://podbay.fm/static/images/menu/home-line.svg" alt="lis icon" />
-        <Link href={"/"}>Home</Link>
+        <Link className="hidden lg:block" href={"/"}>Home</Link>
             </div>
         </div>
         <div className=" hover:bg-linear-to-r from-[#15212e] to-10%  hover:text-[#61d1d8]">
         <div className="px-4 py-2 flex gap-4 items-center">
          <img className=" h-4" src="https://podbay.fm/static/images/menu/discover-line.svg" alt="lis icon" />
-        <Link href={"/"}>Dicover</Link>
+        <Link className="hidden lg:block" href={"/"}>Dicover</Link>
         </div>
         </div>
     </div>
 
     </div>
 <div className=" flex flex-col text-[#ffff]">
-    <p  className="text-[#808088] font-bold text-sm mt-4 px-3">Your STUFF</p>
+    <p  className="text-[#808088] font-bold text-sm mt-4 px-3 hidden lg:block">Your STUFF</p>
     <div className=" hover:bg-linear-to-r from-[#161f30] to-10% hover:text-[#4daee8]">
     <div className="px-4 py-2 flex gap-4 items-center">
 <img className=" h-4" src="https://podbay.fm/static/images/menu/my-queue-line.svg" alt="lis icon" />
-    <Link href={"/"}>My Queue</Link>
+    <Link className="hidden lg:block" href={"/"}>My Queue</Link>
     </div>
     </div>
     <div className=" hover:bg-linear-to-r from-[#201c27] to-10%  hover:text-[#c0795d]">
     <div className="px-4 py-2 flex gap-4 items-center">
 <img className=" h-4" src="https://podbay.fm/static/images/menu/my-podcasts-line.svg" alt="icon My Prodcats" />
-    <Link href={"/"}>My Prodcats</Link>
+    <Link className="hidden lg:block" href={"/"}>My Prodcats</Link>
     </div>
     </div>
     <div className="hover:bg-linear-to-r from-[#1f1b2f] to-10% ">
     <div className="px-4 py-2 flex gap-4 items-center">
 <img className=" h-4" src="https://podbay.fm/static/images/menu/recents-line.svg" alt="icon Recents" />
-    <Link  href={"/"}>Recents</Link>
+    <Link className="hidden lg:block" href={"/"}>Recents</Link>
     </div>
     </div>
     </div>    

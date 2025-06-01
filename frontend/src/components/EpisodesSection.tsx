@@ -37,7 +37,7 @@ export default function EpisodeSection({ episodes }: { episodes: Episode[] }) {
       <div className="mt-10 px-6 text-white  ">
        
   
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 ">
           <div>{col1.map(renderEpisode)}</div>
           <div>{col2.map(renderEpisode)}</div>
           <div>{col3.map(renderEpisode)}</div>
