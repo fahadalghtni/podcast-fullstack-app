@@ -16,12 +16,18 @@ export default function Home() {
     setTracks(data);
   };
 
+  // const fetchEpisodes = async () => {
+  //   const res = await fetch("https://podcast-fullstack-app-backend.onrender.com/itunes/all");
+  //   const data = await res.json();
+  //   setEpisodes(data);
+  // };
   const fetchEpisodes = async () => {
     const res = await fetch("https://podcast-fullstack-app-backend.onrender.com/itunes/all");
     const data = await res.json();
-    setEpisodes(data);
+    const limitedData = data.slice(0, 18); 
+    setEpisodes(limitedData);
   };
-
+  
   useEffect(() => {
     fetchEpisodes();
     handleSearch("فنجان") // تشغيل عند أول تحميل
