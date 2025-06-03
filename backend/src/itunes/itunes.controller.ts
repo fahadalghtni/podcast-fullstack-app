@@ -15,7 +15,6 @@ export class ItunesController {
     return this.itunesService.findAll();
   }
 
-  // ✅ Ping endpoint للتسخين
   @Get('ping')
   ping() {
     return { status: 'ok' };

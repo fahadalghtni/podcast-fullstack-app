@@ -4,8 +4,14 @@ import Sidebar from "@/components/Sidebar";
 import TrackSection from "@/components/TrackSection";
 import EpisodeSection from "@/components/EpisodesSection";
 import { useState } from "react";
+interface Homeprops{
+  initialTracks:any[];
+  initialEpisodes:any[];
+  initialSearchTerm:string;
 
-export default function Home({ initialTracks, initialEpisodes, initialSearchTerm }) {
+
+} 
+export default function Home({ initialTracks, initialEpisodes, initialSearchTerm }:Homeprops) {
   const [tracks, setTracks] = useState(initialTracks);
   const [episodes] = useState(initialEpisodes);
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
