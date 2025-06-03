@@ -39,7 +39,7 @@ const fetchEpisodes = async () => {
       <div className="flex-1 flex flex-col">
         <Navbar onSearch={handleSearch} />
   
-        <div className="border-b border-[#28293D] bg-[#1A1C2D]">
+        <div className=" hidden border-b border-[#28293D] bg-[#1A1C2D]">
           <p className="text-sm font-bold p-4 mb-2 text-white pt-12">
             {searchTerm ? `Top podcasts for ${searchTerm}` : "Popular new podcasts"}
           </p>
