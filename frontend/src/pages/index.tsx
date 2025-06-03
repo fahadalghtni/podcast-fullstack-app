@@ -7,7 +7,7 @@ import { useState } from "react";
 
 export default function Home({ initialTracks, initialEpisodes, initialSearchTerm }) {
   const [tracks, setTracks] = useState(initialTracks);
-  const [episodes, setEpisodes] = useState(initialEpisodes);
+  const [episodes] = useState(initialEpisodes);
   const [searchTerm, setSearchTerm] = useState(initialSearchTerm);
 
   const handleSearch = async (term: string) => {
@@ -41,7 +41,7 @@ export default function Home({ initialTracks, initialEpisodes, initialSearchTerm
   );
 }
 
-// ✅ ISR بدال SSR
+
 export const getStaticProps: GetStaticProps = async () => {
   const term = "فنجان";
 
@@ -60,6 +60,6 @@ export const getStaticProps: GetStaticProps = async () => {
       initialEpisodes: episodes,
       initialSearchTerm: term,
     },
-    revalidate: 3600, // يعيد توليد الصفحة كل ساعة (3600 ثانية)
+    revalidate: 3600, 
   };
 };
