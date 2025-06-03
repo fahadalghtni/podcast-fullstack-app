@@ -6,7 +6,7 @@ async function bootstrap() {
 
   // ✅ تمكين CORS:
   app.enableCors({
-    origin: 'https://podcast-fullstack-app-frontend.onrender.com', 
+    origin: 'https://podcast-fullstack-app-frontend.onrender.com',
     credentials: true,
   });
 

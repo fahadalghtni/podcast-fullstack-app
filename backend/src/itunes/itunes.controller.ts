@@ -14,4 +14,10 @@ export class ItunesController {
   async findAll() {
     return this.itunesService.findAll();
   }
+
+  // ✅ Ping endpoint للتسخين
+  @Get('ping')
+  ping() {
+    return { status: 'ok' };
+  }
 }
