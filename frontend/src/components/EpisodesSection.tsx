@@ -19,11 +19,11 @@ export default function EpisodeSection({ episodes }: { episodes: Episode[] }) {
   const renderEpisode = (ep: Episode) => (
     
     <div key={ep.id} className="flex items-center justify-between hover:bg-black border-b border-[#22232a]">
+
       <div className="flex items-center gap-4  p-1 rounded transition ">
-        <img
-          src={ep.artworkUrl100}
-          alt={ep.trackName}
-          className="w-14 h-14 rounded object-cover"
+        <img src={ep.artworkUrl100} alt={ep.trackName}
+          className="w-14 h-14 rounded object-cover "
+          loading="lazy"
         />
         <div className="flex flex-col">
           <span className="font-medium text-sm">{ep.trackName}</span>

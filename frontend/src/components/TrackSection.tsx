@@ -19,6 +19,7 @@ export default function TrackSection({ tracks }: { tracks: Track[] }) {
                image={(track.artworkUrl100 || track.image)!}
               trackName={track.trackName}
               artistName={track.artistName}
+              
             />
           </div>
         ))}
