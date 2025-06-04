@@ -18,9 +18,9 @@ export default function EpisodeSection({ episodes }: { episodes: Episode[] }) {
 
   const renderEpisode = (ep: Episode) => (
     
-    <div key={ep.id} className="flex items-center justify-between hover:bg-black border-b border-[#22232a]">
+    <div key={ep.id} className="flex items-center justify-between hover:bg-black border-b border-[#22232a] ">
 
-      <div className="flex items-center gap-4  p-1 rounded transition ">
+      <div className="flex items-center gap-4  p-1 rounded transition  ">
         <img src={ep.artworkUrl100} alt={ep.trackName}
           className="w-14 h-14 rounded object-cover "
           loading="lazy"
@@ -42,12 +42,26 @@ export default function EpisodeSection({ episodes }: { episodes: Episode[] }) {
   );
 
   return (
+    <div   >
+  <div className="border-b border-[#28293D] bg-[#1A1C2D] flex  justify-between items-center ">
+  <p className="text-sm font-bold p-4 mb-2 text-white pt-12">
+    Top episodes for 
+  </p>
+  <div className=" flex items-center p-6 text-[#ffff]">
+
+  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" className="jsx-8dd1f9521a2787d1 jsx-1363621759" height="22" width="22" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+  </div>
+
+
+</div>
+
     <div className="mt-5 px-6 text-white">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>{col1.map(renderEpisode)}</div>
         <div>{col2.map(renderEpisode)}</div>
         <div>{col3.map(renderEpisode)}</div>
       </div>
+    </div>
     </div>
   );
 }

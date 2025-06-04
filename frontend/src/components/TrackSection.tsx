@@ -11,7 +11,7 @@ export default function TrackSection({ tracks }: { tracks: Track[] }) {
  
 
   return (
-    <div className="overflow-x-scroll max-w-[1170px] pb-6  custom-scroll ">
+    <div className="overflow-x-scroll lg:max-w-[1170px] w-screen  pb-6  custom-scroll bg-[#1A1C2D] ">
       <div className="whitespace-nowrap">
         {tracks.map((track, index) => (
           <div key={index} className="inline-block mr-4 align-top">

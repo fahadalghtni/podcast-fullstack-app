@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Sidebar() {
     return (
-<div className="bg-[#141523] min-h-screen flex flex-col justify-between border border-r-[#2e2e39]">
+<div className="bg-[#141523] min-h-screen lg:flex flex-col justify-between border border-r-[#2e2e39] hidden  ">
     <div className="">
 
     <div className=" text-[#ffff]">
