@@ -4,12 +4,19 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  // ✅ تمكين CORS:
+  // ✅ تمكين :
   app.enableCors({
-    origin: 'https://podcast-fullstack-app-frontend.onrender.com',
+    origin: [
+      'http://localhost:3000',
+      'https://podcast-fullstack-app-frontend.onrender.com'
+    ],
     credentials: true,
   });
 
-  await app.listen(3000);
+  // ✅ Render يعمل محلياً وعلى 
+  const port = process.env.PORT || 3001;
+  await app.listen(port);
+
+  console.log(`Backend running on port ${port}`);
 }
 bootstrap();

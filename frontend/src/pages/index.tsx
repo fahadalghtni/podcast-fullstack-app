@@ -4,6 +4,9 @@ import Sidebar from "@/components/Sidebar";
 import TrackSection from "@/components/TrackSection";
 import EpisodeSection from "@/components/EpisodesSection"; 
 
+const API_URL = typeof window !== 'undefined' && window.location.hostname === 'localhost'
+  ? 'http://localhost:3001'  // محلياً
+  : 'https://podcast-fullstack-app-backend.onrender.com';  // Render
 export default function Home() {
   const [tracks, setTracks] = useState([]);
   const [episodes, setEpisodes] = useState([]); 
@@ -11,14 +14,14 @@ export default function Home() {
 
   const handleSearch = async (term: string) => {
     setSearchTerm(term);
-    const res = await fetch(`https://podcast-fullstack-app-backend.onrender.com/itunes/search?term=${term}`);
+    const res = await fetch(`${API_URL}/itunes/search?term=${term}`);
     const data = await res.json();
     setTracks(data);
   };
 
   
 const fetchEpisodes = async () => {
-  const res = await fetch("https://podcast-fullstack-app-backend.onrender.com/itunes/all");
+  const res = await fetch(`${API_URL}/itunes/all`);
   const data = await res.json();
   const limitedData = data.slice(0, 18); 
   setEpisodes(limitedData);
